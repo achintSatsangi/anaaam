@@ -1,0 +1,8 @@
+dea
+*.iml
+*.log
+target/
+.DS_Store
+node_modules/
+.sass-cache/
+static/
