@@ -2,8 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a6ab2b7-2e3d-4741-a75b-298c2f7b3bd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/liquibase/changelog-add-employee-data.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/liquibase/changelog-create-employee-table.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/liquibase/master.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/dao/EmployeeDaoImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/dao/EmployeeDaoImpl$EmployeeRowMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/dao/EmployeeDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/domain/Employee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/domain/ObjectMotherEmployee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/service/EmployeeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/test/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/util/DaoUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/org/vs/webresource/EmployeeWebResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/screenshots/createPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/screenshots/editPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/screenshots/mainPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/classes/spring/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/guava-18.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/jackson-jaxrs-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/jackson-xc-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/jna-4.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/jna-platform-4.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/joda-time-2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/liquibase-core-3.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/postgresql-9.4-1200-jdbc41.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/slf4j-simple-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-aop-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-beans-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-context-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-context-support-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-core-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-expression-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-jdbc-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-orm-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-test-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-tx-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-web-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/spring-webmvc-4.0.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/lib/waffle-jna-1.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/create.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/edit.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/cover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/email.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/email2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/facebook.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/favicon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/instagram.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/images/twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/index2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/EmployeeManagement/list.mustache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/liquibase/changelog-add-employee-data.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/liquibase/changelog-create-employee-table.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/liquibase/master.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/dao/EmployeeDaoImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/dao/EmployeeDaoImpl$EmployeeRowMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/dao/EmployeeDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/domain/Employee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/domain/ObjectMotherEmployee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/service/EmployeeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/test/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/util/DaoUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/vs/webresource/EmployeeWebResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/createPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/editPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/screenshots/mainPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/jetty-runner.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/vs/dao/EmployeeDaoImplTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/vs/service/EmployeeServiceTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/vs/test/HelloWorldTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/vs/webresource/EmployeeWebResourceTest.class" afterPath="" />
     </list>
     <ignored path="anaaam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +128,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19444445" vertical-offset="0" max-vertical-offset="2880">
+            <state vertical-scroll-proportion="0.1872214" vertical-offset="0" max-vertical-offset="2880">
               <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
@@ -156,60 +239,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anaaam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,16 +358,16 @@
       <created>1449133678977</created>
       <option name="number" value="Default" />
       <updated>1449133678977</updated>
-      <workItem from="1449133680253" duration="285000" />
+      <workItem from="1449133680253" duration="657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285000" />
+    <option name="totallyTimeSpent" value="657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -352,7 +381,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -434,7 +463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19444445" vertical-offset="0" max-vertical-offset="2880">
+        <state vertical-scroll-proportion="0.1872214" vertical-offset="0" max-vertical-offset="2880">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
