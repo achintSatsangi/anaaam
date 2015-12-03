@@ -1,38 +1,36 @@
-# java-getting-started
+## Maven Spring Web Starter Project
 
-A barebones Java app, which can easily be deployed to Heroku.  
+1. Jetty plugin as embedded server
+2. In Memory Derby Database
+3. Liquibase integration
+4. Spring Rest services for backend
+5. Backbone as frontend (CRUD example)
+6. Mustache templates
+7. Twitter Bootstrap for styling
 
-This application support the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out.
+### First time setup
+- Clone project
+- Navigate to project path in terminal and execute **mvn inmemdb:run** to start Derby database server
+- Navigate to project path in terminal and execute **mvn liquibase:update** to run liquibase scripts to create DB and load data
+- Build project and start jetty server by executing **mvn clean install && mvn jetty:run**
+- Open application in browser using url **http://localhost:8080/**
 
-## Running Locally
 
-Make sure you have Java and Maven installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+### Employee Manager
 
-```sh
-$ git clone https://github.com/heroku/java-getting-started.git
-$ cd java-getting-started
-$ mvn install
-$ foreman start web
-```
+#### REST services details
+- Get all employees: GET http://localhost:8080/employee
+- Get employee by Id: GET http://localhost:8080/employee/{employeeId}
+- Create new employee (with employee data): POST http://localhost:8080/employee
+- Delete employee: DELETE http://localhost:8080/employee/{employeeId}
+- Update employee (with employee data): PUT http://localhost:8080/employee/{employeeId}
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-If you're going to use a database, ensure you have a local `.env` file that reads something like this:
+#### Main Page
+![Main Page](/src/main/resources/screenshots/mainPage.png?raw=true)
 
-```
-DATABASE_URL=postgres://localhost:5432/java_database_name
-```
+#### Create Page
+![Main Page](/src/main/resources/screenshots/createPage.png?raw=true)
 
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-## Documentation
-
-For more information about using Java on Heroku, see these Dev Center articles:
-
-- [Java on Heroku](https://devcenter.heroku.com/categories/java)
+#### Edit Page
+![Main Page](/src/main/resources/screenshots/editPage.png?raw=true)
