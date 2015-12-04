@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.test</groupId>
-    <artifactId>EmployeeManagement</artifactId>
+    <artifactId>anaam</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>EmployeeManagement Maven Webapp</name>
+    <name>Anaam Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
 
@@ -126,10 +126,25 @@
             <artifactId>liquibase-core</artifactId>
             <version>3.3.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>EmployeeManagement</finalName>
+        <finalName>anaam</finalName>
         <plugins>
             <!-- Jetty -->
             <plugin>

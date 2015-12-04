@@ -1,191 +1,196 @@
-
 <!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> 
-	<title>Anaam.....</title>
-  <!-- for FF, Chrome, Opera -->
-<link rel="icon" type="image/jpg" href="./images/favicon.jpg" sizes="32x32">
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Anaam</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="./images/jpg" href="./images/favicon.jpg" sizes="32x32">
 
-<!-- for IE -->
-<link rel="icon" type="image/jpg" href="./images/favicon.jpg" >
-	
-        <style  type="text/css">
+		<!-- for IE -->
+		<link rel="icon" type="./images/jpg" href="./images/favicon.jpg" >
 
-        body {
-        	background-color: #FFD689;
-        }
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<script type="text/javascript">
+		function sendMail() {
+			
+			var name = document.getElementById("name");
+			var email = document.getElementById("email");
+			var message = document.getElementById("message");
 
-          #banner {
-             margin-left:auto; 
-             margin-right:auto; 
-             width:1000px;
-              animation: fadein 2s;
-              -moz-animation: fadein 2s; /* Firefox */
-              -webkit-animation: fadein 2s; /* Safari and Chrome */
-              -o-animation: fadein 2s; /* Opera */
-          }
+			var urlWithParam = "../sendMail?name=" + name.value + "&email=" + email.value + "&message=" + message.value;
+			alert(urlWithParam);
 
-          #banner img { 
-             max-width:1000px; 
-             max-height:300px; 
-          }
- 
-          #main {
-            margin-left:auto;
-            margin-right:auto;
-            width:1000px; 
-          }    
+			$.ajax({
+		        url: urlWithParam,
+		        type: 'get',
+		        dataType: 'text',
+		        success: function(data) {
+		                   alert('success');
+		                   name.value='';
+							email.value='';
+							message.value='';
+		                   return false;
+		                 },
+		        error: function (xhr, ajaxOptions, thrownError) {
+			        alert(xhr.status);
+			        alert(thrownError);
+			        return false;
+			    }
+		    });
+		    return false;
+		}
+	</script>
+	<body>
 
-          #main-content {
-            padding:10px;
-            width:850px; 
-            float:left;
-            border: solid;
-            border-width: 2px;
-            border-color: #B8A98D;
-        	background-color: #E6DBC8;
-          }  
+		<!-- Header -->
+			<header id="header">
 
-          .main-header {
-          	width: 100%; 
-          	border: solid;
-            border-width: 2px;
-            border-color: #B8A98D;
-          	background-color: #B8A98D;
-          }
+				<!-- Logo -->
+					<h1 id="logo">Anaam</h1>
 
-          #widget-container {
-            padding-right:25px;
-            width:72px; 
-            float:right;
-          }
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#one">What We Do</a></li>
+							<li><a href="#two">Who We Are</a></li>
+							<li><a href="#work">Our Work</a></li>
+							<!--<li><a href="#contact">Contact</a></li>-->
+						</ul>
+					</nav>
 
-          #widget-container img {
-             max-width:64px; 
-             max-height:64px; 
-          }
+			</header>
 
-          .widget-content {
-             margin:20px; 
-             padding:1px;
-             width:70px;
-             background-color:#FFD689; 
-          } 
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container 75%">
+					<header>
+						<h2>Shukran</h2>
+					</header>
+					<p>Welcome to <strong>Anaam</strong><br>
+					Every once in a while, along comes a fashion label that has the power to permeate set barriers and dissolve all stereotypes. 'Anaam' is one label that breaks away from rigid barriers, prescribed norms, and is in every aspect, a body that has a soul of its own.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
 
-          .widget-text {
-             padding:10px;
-             background-color:#FFD689;   
-          }    
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What We Do</h2>
+					</header>
+					<p>Anaam specializes to work with concepts and transform them into tactile pieces. Through the design process, it envisions it's creations to play the role of healers- providing the wearer with freedom, comfort, and an intangible yet very aware emotional empowerment.</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
 
-          @media (min-width: 481px) and (max-width: 768px) {
-            #banner { width:740px; }
-            #banner img { max-width:740px; max-height:222px; }
-            #main { width:740px; }            
-            #main-content { width:630px; float:left; }
-            #widget-container { width:50px; float:right; }
-            #widget-container img { padding-right:15px; max-width:50px; max-height:50px;}
-            .widget-content { width:45px; }
-          } 
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who We Are</h2>
+					</header>
+					<p>A group of absolute creativity enthusiasts, we love the idea of creating magic through collaborations in diverse disciplines from accessories, to furniture, to performance arts and installations.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
 
-          @media (min-width: 321px) and (max-width: 480px) {
-            #banner { width:450px; }
-            #banner img { max-width:450px; max-height:135px; }
-            #main { width:450px; display: inline-block;}            
-            #main-content { width:420px;}
-            #widget-container { width:380px; }
-            .widget-content { width:80px; margin:5px; float:left; }
-            #widget-container img { max-width:50px; max-height:50px;}
-          }
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>Our Work</h2>
+						<p>We love to find beauty in the bizarre, and absolute fidelity.</p>
+					</header>
 
-          @media (max-width: 320px) {
-            #banner { width:275px; }
-            #banner img { max-width:275px; max-height:83px; }
-            #main { width:180px; }            
-            #main-content { width:180px;padding:0px; }
-            #widget-container { width:72px; padding:0px; display: inline;}
-            #widget-container img { padding-right:5px; max-width:62px; max-height:62px;}
-            .widget-content { width:70px; margin:5px;display: inline;}
-          }
+					<!-- Lightbox Gallery  -->
+						<div class="container 75% gallery">
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="Image 1 Title" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Image 2 Title" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="Image 3 Title" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Image 4 Title" alt="" /></a></div>
+							</div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="Image 5 Title" alt="" /></a></div>
+								<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Image 6 Title" alt="" /></a></div>
+							</div>
+						</div>
 
-        @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        @-moz-keyframes fadein { /* Firefox */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        @-webkit-keyframes fadein { /* Safari and Chrome */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        @-o-keyframes fadein { /* Opera */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-	</style>
-	
-</head>
+				</div>
+			</section>
 
-<body>
-<div class="test" id="banner"><img src="./images/cover.jpg"></div>
-<div id="main">
- <div id="widget-container">
-  <div class="widget-content">
-   <div class="widget-text">
-         <a target="_blank" href="https://www.facebook.com/anaamofficial"><img class="link-icon" src="./images/facebook.ico"></a>
-   </div>
-  </div>  
+		<!-- Contact
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Say Hello.</h2>
+					</header>
+					<div class="box container 75%">
 
-  <div class="widget-content">
-   <div class="widget-text">
-         <a target="_blank" href="https://twitter.com/anaamofficial"><img class="link-icon" src="./images/twitter.png"></a>
-   </div>
-  </div>  
+					<!-- Contact Form
+							<form method="post" action="#">
+								<div class="row 50%">
+									<div class="6u 12u(mobile)"><input type="text" id="name" name="name" placeholder="Name" /></div>
+									<div class="6u 12u(mobile)"><input type="email" id="email" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row 50%">
+									<div class="12u"><textarea id="message" name="message" placeholder="Message" rows="6"></textarea></div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" onclick="sendMail()" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
 
-  <div class="widget-content">
-   <div class="widget-text">
-         <a target="_blank" href="https://www.instagram.com/anaamofficial/"><img class="link-icon" src="./images/instagram.ico"></a>
-   </div>
-  </div> 
-  <div class="widget-content">
-   <div class="widget-text">
-         <a href="mailto:anaam211213@gmail.com"><img class="link-icon" src="./images/email2.png"></a>
-   </div>
-  </div> 
- </div>
- <div id="main-content">
-  <div class="main-header">Zariya</div>
-  <div class="main-body">
-    <p>Join Anaam for a celebration honouring the opening of Zariyaa.<br>
-      Zariyaa is a medium to a soul connect for Art, Music, Fashion And Performance.<br>
-      <ul>
-<li>Tea and cookies will be served.</li>
-<li>Small Performances will be held too.</li>
-<li>Please follow up with the updates <a target="_blank" href="https://www.facebook.com/events/1702384006639967/">here</a></li>
-</ul>
-</p>
-  </div>
- </div>
-</div> 
+					</div>
+				</div>
+			</section>
+        -->
+		<!-- Footer -->
+			<footer id="footer">
 
-</body>
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a target="_blank" href="https://twitter.com/anaamofficial" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/anaamofficial" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<!--<li><a target="_blank" href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a target="_blank" href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a target="_blank" href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>-->
+						<li><a target="_blank" href="https://www.instagram.com/anaamofficial" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; anaam</li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
 </html>

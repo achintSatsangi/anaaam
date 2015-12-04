@@ -6,7 +6,7 @@ import org.mockito.Mock;
 import org.vs.domain.Employee;
 import org.vs.domain.ObjectMotherEmployee;
 import org.vs.service.EmployeeService;
-import org.vs.webresource.EmployeeWebResource;
+import org.vs.service.SendMailService;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -24,10 +24,12 @@ public class EmployeeWebResourceTest {
     @Mock
     EmployeeService employeeService;
 
+    @Mock SendMailService sendMailService;
+
     @Before
     public void setUp() throws Exception {
         initMocks(this);
-        employeeWebResource = new EmployeeWebResource(employeeService);
+        employeeWebResource = new EmployeeWebResource(employeeService, sendMailService);
     }
 
     @Test

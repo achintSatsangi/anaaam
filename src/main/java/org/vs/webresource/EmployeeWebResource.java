@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.vs.domain.Employee;
 import org.vs.service.EmployeeService;
+import org.vs.service.SendMailService;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -19,9 +21,12 @@ public class EmployeeWebResource {
 
     EmployeeService employeeService;
 
+    public final SendMailService sendMailService;
+
     @Autowired
-    public EmployeeWebResource(EmployeeService employeeService) {
+    public EmployeeWebResource(EmployeeService employeeService, SendMailService sendMailService) {
         this.employeeService = employeeService;
+        this.sendMailService = sendMailService;
     }
 
     @RequestMapping(value = "/employee/{employeeId}", method = RequestMethod.GET)
