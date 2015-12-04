@@ -19,6 +19,36 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
+	<script type="text/javascript">
+		function sendMail() {
+			
+			var name = document.getElementById("name");
+			var email = document.getElementById("email");
+			var message = document.getElementById("message");
+
+			var urlWithParam = "../sendMail?name=" + name.value + "&email=" + email.value + "&message=" + message.value;
+			alert(urlWithParam);
+
+			$.ajax({
+		        url: urlWithParam,
+		        type: 'get',
+		        dataType: 'text',
+		        success: function(data) {
+		                   alert('success');
+		                   name.value='';
+							email.value='';
+							message.value='';
+		                   return false;
+		                 },
+		        error: function (xhr, ajaxOptions, thrownError) {
+			        alert(xhr.status);
+			        alert(thrownError);
+			        return false;
+			    }
+		    });
+		    return false;
+		}
+	</script>
 	<body>
 
 		<!-- Header -->
@@ -114,16 +144,16 @@
 					<!-- Contact Form -->
 							<form method="post" action="#">
 								<div class="row 50%">
-									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+									<div class="6u 12u(mobile)"><input type="text" id="name" name="name" placeholder="Name" /></div>
+									<div class="6u 12u(mobile)"><input type="email" id="email" name="email" placeholder="Email" /></div>
 								</div>
 								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+									<div class="12u"><textarea id="message" name="message" placeholder="Message" rows="6"></textarea></div>
 								</div>
 								<div class="row">
 									<div class="12u">
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="submit" value="Send Message" onclick="sendMail()" /></li>
 										</ul>
 									</div>
 								</div>
@@ -162,6 +192,5 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
